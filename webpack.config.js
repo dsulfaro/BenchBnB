@@ -1,10 +1,11 @@
 // webpack.config.js
+var path = require("path");
 
 module.exports = {
-  entry: './frontend/bench_bnb.jsx',
+  entry: "./frontend/bench_bnb.jsx",
   output: {
-    path: 'app/assets/javascripts',
-    filename: 'bundle.js',
+    path: path.join(__dirname, 'app', 'assets', 'javascripts'),
+    filename: "bundle.js"
   },
   module: {
     loaders: [
