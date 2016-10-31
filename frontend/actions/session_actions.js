@@ -19,7 +19,7 @@ export const signup = user => ({
 });
 
 export const receiveCurrentUser = currentUser => ({
-  type: currentUser,
+  type: RECEIVE_CURRENT_USER,
   currentUser
 });
 
